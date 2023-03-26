@@ -1,5 +1,5 @@
 * {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -9,17 +9,22 @@
   justify-content: end;
   padding: 30px;
   font-size: 1.1rem;
+  height: 100%;
 }
 
 .header-subdiv {
   display: flex;
   justify-content: space-evenly;
-  width: 300px;
+  width: 400px;
+
 }
 
 .header-subdiv-item {
+  display: flex;
   padding: 20px;
   border-radius: 25px;
+  font-size: 1.2rem;
+  align-self: center;
 }
 
 .header-subdiv-item:hover {
@@ -29,20 +34,91 @@
   color: white;
 }
 
+.moon {
+  background: none;
+  border: white;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.moon:hover {
+  border: 2px solid black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 .intro-div {
   display: flex;
   justify-content: center;
+  margin-top: 70px;
 }
 
 .name-div {
   height: 300px;
-  width: 200px;
+  width: 250px;
   padding: 20px;
-  border: 1px solid black;
+  margin-right: 50px;
+  place-items: center;
+  font-size: 1.5rem;
+  align-self: center;
+  margin-top: 2%;
+}
+
+#name-1 {
+  animation-name: name-1;
+  animation-duration: 1s;
+}
+
+@keyframes name-1 {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+#name-2 {
+  animation-name: name-2;
+  animation-duration: 2s;
+}
+
+@keyframes name-2 {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .profile-img {
   height: 400px;
   width: 400px;
   border-radius: 500px;
+}
+
+.skill-div {
+  font-size: 1.5rem;
+  width: 250px;
+  height: 300px;
+  align-self: center;
+  word-wrap: break-word;
+  margin-top: 2%;
+  margin-left: 80px;
+  animation-name: skill;
+  animation-duration: 2s;
+}
+
+@keyframes skill {
+  0% {
+    transform: translateX(300px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
 }
