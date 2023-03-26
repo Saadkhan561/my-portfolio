@@ -1,0 +1,48 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-main {
+  display: flex;
+  justify-content: end;
+  padding: 30px;
+  font-size: 1.1rem;
+}
+
+.header-subdiv {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+}
+
+.header-subdiv-item {
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.header-subdiv-item:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  background-color: black;
+  color: white;
+}
+
+.intro-div {
+  display: flex;
+  justify-content: center;
+}
+
+.name-div {
+  height: 300px;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.profile-img {
+  height: 400px;
+  width: 400px;
+  border-radius: 500px;
+}
